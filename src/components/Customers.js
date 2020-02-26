@@ -6,7 +6,7 @@ const Customers = props =>{
 let [customers, setCustomers] = useState([]);
 
 useEffect(()=>{
-    fetch('/api').then(data=>data.json())
+    fetch('http://www.saleplus.site/api').then(data=>data.json())
     .then(customers=>{
         setCustomers(customers)
         console.log(customers)
